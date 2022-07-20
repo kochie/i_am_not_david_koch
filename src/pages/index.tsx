@@ -18,7 +18,7 @@ import josh2 from "../assets/images/josh2.jpeg";
 
 export default function Home() {
   return (
-    <div className="bg-slate-100 dark:bg-slate-800 dark:text-white w-screen text-center md:text-left">
+    <div className="bg-slate-100 dark:bg-slate-800 dark:text-white text-center md:text-left">
       <Head>
         <title>I am Not David Koch</title>
       </Head>
@@ -46,7 +46,7 @@ export default function Home() {
         }}
       />
 
-      <div className="md:flex md:flex-col md:justify-center w-screen">
+      <div className="md:flex md:flex-col md:justify-center">
         <div className="md:mt-40 text-5xl text-center p-5">
           I am <span className="italic font-bold mx-2">_not_</span> David Koch.
         </div>
@@ -64,10 +64,18 @@ export default function Home() {
             "Don't be fooled by how much we're #twinning we couldn't be more different. Well we're both white Australian males, but David is 38 years older than me."
           }
         </div>
-        <div className="flex justify-center md:w-[600px] mx-auto mt-10">
+        <div className="md:w-[600px] md:mx-auto mx-3 mt-10">
           {
-            'As the chairman of the Port Adelaide Football Club David gets a lot of "fan" support.'
+            'As the chairman of the Port Adelaide Football Club David gets a lot of "fan" support. But sometimes in the heat of the moment his critics will mistake his twitter handle of '
           }
+          <a className="underline" href="https://twitter.com/kochie_online">
+            @kochie_online
+          </a>
+          {" with mine "}
+          <a className="underline" href="https://twitter.com/kochie">
+            @kochie
+          </a>
+          {"."}
         </div>
         <div className="md:mx-auto mx-3 my-20">
           <MichaelLynch />
@@ -85,10 +93,15 @@ export default function Home() {
         <div className="md:mx-auto mx-3">
           <Michael />
         </div>
-        <div className="flex justify-center md:w-[600px] mx-auto mt-10 mb-20">
+        <div className="flex justify-center md:w-[600px] md:mx-auto mx-3 mt-10 mb-20">
           {"Michael really doesn't like me :("}
         </div>
 
+        <div className="flex justify-center md:w-[600px] md:mx-auto mx-3 mt-10 mb-20">
+          {
+            "And it's not just his detractors, politicians get it wrong...\n all. the. time."
+          }
+        </div>
         <div className="md:mx-auto mx-3 my-20">
           <Jim />
         </div>
