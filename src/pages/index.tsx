@@ -18,9 +18,9 @@ import josh2 from "../assets/images/josh2.jpeg";
 
 export default function Home() {
   return (
-    <div className="bg-slate-100 dark:bg-slate-800 dark:text-white">
+    <div className="bg-slate-100 dark:bg-slate-800 dark:text-white w-screen text-center md:text-left">
       <Head>
-        <title>I am _Not_ David Koch</title>
+        <title>I am Not David Koch</title>
       </Head>
       <NextSeo
         title="I am not David Koch"
@@ -46,59 +46,59 @@ export default function Home() {
         }}
       />
 
-      <div className="flex flex-col justify-center">
-        <div className="flex justify-center mt-40 text-5xl">
-          I am <span className="italic font-bold">_not_</span> David Koch.
+      <div className="md:flex md:flex-col md:justify-center w-screen">
+        <div className="md:mt-40 text-5xl text-center p-5">
+          I am <span className="italic font-bold mx-2">_not_</span> David Koch.
         </div>
-        <div className="mx-auto my-20">
-          <Image src={David} />
+        <div className="md:mx-auto mx-3 my-20">
+          <Image src={David} alt="image of david koch from sunrise" />
         </div>
         <div className="flex justify-center">
           Look at this beautiful egg shaped man, now look at me.
         </div>
-        <div className="mx-auto my-20 w-96">
-          <Image src={Me} />
+        <div className="md:mx-auto mx-3 my-20 md:w-96">
+          <Image src={Me} alt="image of me robert koch" />
         </div>
-        <div className="flex justify-center w-[600px] mx-auto">
+        <div className="flex justify-center md:w-[600px] md:mx-auto mx-3">
           {
             "Don't be fooled by how much we're #twinning we couldn't be more different. Well we're both white Australian males, but David is 38 years older than me."
           }
         </div>
-        <div className="flex justify-center w-[600px] mx-auto">
+        <div className="flex justify-center md:w-[600px] mx-auto mt-10">
           {
             'As the chairman of the Port Adelaide Football Club David gets a lot of "fan" support.'
           }
         </div>
-        <div className="mx-auto my-20">
+        <div className="md:mx-auto mx-3 my-20">
           <MichaelLynch />
         </div>
-        <div className="mx-auto mb-20">
+        <div className="md:mx-auto mx-3 mb-20">
           <Spotty />
         </div>
-        <div className="mx-auto">
+        <div className="md:mx-auto mx-3">
           <Leigh />
         </div>
-        <div className="flex justify-center w-[600px] mx-auto mt-10 mb-20">
+        <div className="flex justify-center md:w-[600px] mx-auto mt-10 mb-20">
           {"Oof Leigh, tell me how you really feel."}
         </div>
 
-        <div className="mx-auto">
+        <div className="md:mx-auto mx-3">
           <Michael />
         </div>
-        <div className="flex justify-center w-[600px] mx-auto mt-10 mb-20">
+        <div className="flex justify-center md:w-[600px] mx-auto mt-10 mb-20">
           {"Michael really doesn't like me :("}
         </div>
 
-        <div className="mx-auto my-20">
+        <div className="md:mx-auto mx-3 my-20">
           <Jim />
         </div>
 
-        <div className="flex justify-center w-[600px] mx-auto">
+        <div className="flex justify-center md:w-[600px] mx-auto">
           {
             "But don't feel bad if you can't tell us apart. His co-host couldn't either."
           }
         </div>
-        <div className="mx-auto my-20 w-[500px]">
+        <div className="md:mx-auto mx-3 my-20 md:w-[500px]">
           <Sam />
         </div>
 
@@ -107,17 +107,17 @@ export default function Home() {
             "Also to all the cowards out there who delete your mistake as soon as I tell you. I see you..."
           }
         </div>
-        <div className="mx-20 my-20 gap-4 grid grid-cols-5">
-          <Image src={p1} />
-          <Image src={p2} />
-          <Image src={p3} />
-          <Image src={p4} />
-          <Image src={p5} />
+        <div className="md:mx-20 mx-3 my-20 gap-4 grid md:grid-cols-5 grid-cols-1">
+          <Image src={p1} alt="screen grab of tweet1" />
+          <Image src={p2} alt="screen grab of tweet2" />
+          <Image src={p3} alt="screen grab of tweet3" />
+          <Image src={p4} alt="screen grab of tweet4" />
+          <Image src={p5} alt="screen grab of tweet5" />
         </div>
         <div className="flex justify-center">Even you Josh.</div>
-        <div className="mx-auto my-20 gap-4 grid grid-cols-2 w-[700px]">
-          <Image src={josh1} />
-          <Image src={josh2} />
+        <div className="md:mx-auto mx-3 my-20 gap-4 grid md:grid-cols-2 grid-cols-1 md:w-[700px]">
+          <Image src={josh1} alt="screen grab of tweet1 from josh" />
+          <Image src={josh2} alt="screen grab of tweet2 from josh" />
         </div>
 
         <div className="flex justify-center">
@@ -125,8 +125,11 @@ export default function Home() {
             "But hey it could be worse, at least no one thinks I'm this David Koch."
           }
         </div>
-        <div className="mx-auto my-20">
-          <Image src={DavidKoch} />
+        <div className="md:mx-auto mx-3 mt-20">
+          <Image
+            src={DavidKoch}
+            alt="image of David Koch from Koch Brothers."
+          />
         </div>
       </div>
     </div>
