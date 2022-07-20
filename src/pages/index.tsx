@@ -3,9 +3,9 @@ import Image from "next/image";
 import Script from "next/script";
 import { NextSeo } from "next-seo";
 
-import David from "../assets/images/david.jpg";
-import DavidKoch from "../assets/images/david-koch.jpg";
-import Me from "../assets/images/melb-marathon.jpg";
+import David from "../assets/images/david.jpeg";
+import DavidKoch from "../assets/images/davidkoch.jpeg";
+import Me from "../assets/images/melb-marathon.jpeg";
 
 import p1 from "../assets/images/1.png";
 import p2 from "../assets/images/2.jpeg";
@@ -13,8 +13,8 @@ import p3 from "../assets/images/3.jpeg";
 import p4 from "../assets/images/4.jpeg";
 import p5 from "../assets/images/5.jpeg";
 
-import josh1 from "../assets/images/josh1.jpg";
-import josh2 from "../assets/images/josh2.jpg";
+import josh1 from "../assets/images/josh1.jpeg";
+import josh2 from "../assets/images/josh2.jpeg";
 
 export default function Home() {
   return (
@@ -60,13 +60,14 @@ export default function Home() {
           <Image src={Me} />
         </div>
         <div className="flex justify-center w-[600px] mx-auto">
-          Don't be fooled by how much we're #twinning we couldn't be more
-          different. Well we're both white Australian males, but David is 38
-          years older than me.
+          {
+            "Don't be fooled by how much we're #twinning we couldn't be more different. Well we're both white Australian males, but David is 38 years older than me."
+          }
         </div>
         <div className="flex justify-center w-[600px] mx-auto">
-          As the chairman of the Port Adelaide Football Club David gets a lot of
-          "fan" support.
+          {
+            'As the chairman of the Port Adelaide Football Club David gets a lot of "fan" support.'
+          }
         </div>
         <div className="mx-auto my-20">
           <MichaelLynch />
@@ -78,14 +79,14 @@ export default function Home() {
           <Leigh />
         </div>
         <div className="flex justify-center w-[600px] mx-auto mt-10 mb-20">
-          Oof Leigh, tell me how you really feel.
+          {"Oof Leigh, tell me how you really feel."}
         </div>
 
         <div className="mx-auto">
           <Michael />
         </div>
         <div className="flex justify-center w-[600px] mx-auto mt-10 mb-20">
-          Michael really doesn't like me :(
+          {"Michael really doesn't like me :("}
         </div>
 
         <div className="mx-auto my-20">
@@ -93,16 +94,18 @@ export default function Home() {
         </div>
 
         <div className="flex justify-center w-[600px] mx-auto">
-          But don't feel bad if you can't tell us apart. His co-host couldn't
-          either.
+          {
+            "But don't feel bad if you can't tell us apart. His co-host couldn't either."
+          }
         </div>
         <div className="mx-auto my-20 w-[500px]">
           <Sam />
         </div>
 
         <div className="flex justify-center">
-          Also to all the cowards out there who delete your mistake as soon as I
-          tell you. I see you...
+          {
+            "Also to all the cowards out there who delete your mistake as soon as I tell you. I see you..."
+          }
         </div>
         <div className="mx-20 my-20 gap-4 grid grid-cols-5">
           <Image src={p1} />
@@ -118,17 +121,14 @@ export default function Home() {
         </div>
 
         <div className="flex justify-center">
-          But hey it could be worse, at least no one thinks I'm this David Koch.
+          {
+            "But hey it could be worse, at least no one thinks I'm this David Koch."
+          }
         </div>
         <div className="mx-auto my-20">
           <Image src={DavidKoch} />
         </div>
       </div>
-      <Script
-        strategy="beforeInteractive"
-        src="https://platform.twitter.com/widgets.js"
-        charSet="utf-8"
-      />
     </div>
   );
 }
