@@ -102,8 +102,11 @@ export default function Home() {
             "And it's not just his detractors, politicians get it wrong...\n all. the. time."
           }
         </div>
-        <div className="md:mx-auto mx-3 my-20">
+        <div className="md:mx-auto mx-3 mt-20">
           <Jim />
+        </div>
+        <div className="md:mx-auto mx-3 my-20">
+          <MurrayWatt />
         </div>
 
         <div className="flex justify-center md:w-[600px] mx-auto">
@@ -262,6 +265,29 @@ const Michael = () => (
     &mdash; 💧Michael Q Todd ⛳ IOTA FAN l GOLFER l DREAMER (@michaelqtodd){" "}
     <a href="https://twitter.com/michaelqtodd/status/1277777946397143040?ref_src=twsrc%5Etfw">
       June 30, 2020
+    </a>
+  </blockquote>
+);
+
+const MurrayWatt = () => (
+  <blockquote className="twitter-tweet">
+    <p lang="en" dir="ltr">
+      Good to talk to{" "}
+      <a href="https://twitter.com/kochie?ref_src=twsrc%5Etfw">@Kochie</a> on{" "}
+      <a href="https://twitter.com/sunriseon7?ref_src=twsrc%5Etfw">
+        @Sunriseon7
+      </a>{" "}
+      about what we’re doing to ensure Australia stays free of foot and mouth
+      disease. Coming up on{" "}
+      <a href="https://twitter.com/ABCBreakfast?ref_src=twsrc%5Etfw">
+        @ABCBreakfast
+      </a>{" "}
+      after 7am.{" "}
+      <a href="https://t.co/At1keQYLgf">pic.twitter.com/At1keQYLgf</a>
+    </p>
+    &mdash; Senator Murray Watt (@MurrayWatt){" "}
+    <a href="https://twitter.com/MurrayWatt/status/1549861881632157696?ref_src=twsrc%5Etfw">
+      July 20, 2022
     </a>
   </blockquote>
 );
