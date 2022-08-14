@@ -97,6 +97,15 @@ export default function Home() {
           {"Michael really doesn't like me :("}
         </div>
 
+        <div className="md:mx-auto mx-3">
+          <ArchieObserving />
+        </div>
+        <div className="flex justify-center md:w-[600px] md:mx-auto mx-3 mt-10 mb-20">
+          {
+            "Archie is upset a commercial TV show has no scientific data on it. May I suggest ABC News Archie?"
+          }
+        </div>
+
         <div className="flex justify-center md:w-[600px] md:mx-auto mx-3 mt-10 mb-20">
           {
             "And it's not just his detractors, politicians get it wrong...\n all. the. time."
@@ -288,6 +297,31 @@ const MurrayWatt = () => (
     &mdash; Senator Murray Watt (@MurrayWatt){" "}
     <a href="https://twitter.com/MurrayWatt/status/1549861881632157696?ref_src=twsrc%5Etfw">
       July 20, 2022
+    </a>
+  </blockquote>
+);
+
+const ArchieObserving = () => (
+  <blockquote className="twitter-tweet">
+    <p lang="en" dir="ltr">
+      Just watched{" "}
+      <a href="https://twitter.com/hashtag/Covid_19?src=hash&amp;ref_src=twsrc%5Etfw">
+        #Covid_19
+      </a>{" "}
+      update from{" "}
+      <a href="https://twitter.com/kochie?ref_src=twsrc%5Etfw">@kochie</a> on
+      Ch7.
+      <br />
+      Kochie&#39;s &quot;can we say it&#39;s over yet?&quot; was met with a
+      &quot;cautiously, yes&quot; response, followed by data illustrating the
+      very opposite, ie why we can expect new variants and multiple waves every
+      year.
+      <br />
+      There was NO health advice given.😡
+    </p>
+    &mdash; Archie O-Observing (@ArchieObserving){" "}
+    <a href="https://twitter.com/ArchieObserving/status/1558592495532982272?ref_src=twsrc%5Etfw">
+      August 13, 2022
     </a>
   </blockquote>
 );
