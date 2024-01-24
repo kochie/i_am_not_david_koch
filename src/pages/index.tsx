@@ -135,6 +135,9 @@ export default function Home() {
         <span> But Alas, all good things must come to an end.</span>
         <Tweet id="1663074550115074049" />
 
+        <span>Or so I thought! I present my pièce de résistance!</span>
+        <Tweet id="529024175285878784" />
+
         <div className="flex justify-center">
           {
             "Also to all the cowards out there who delete your mistake as soon as I tell you. I see you..."
