@@ -132,11 +132,18 @@ export default function Home() {
         </div>
         <Tweet id="1729372641914699866" />
 
-        <span> But Alas, all good things must come to an end.</span>
+        <span>But Alas, all good things must come to an end.</span>
         <Tweet id="1663074550115074049" />
 
         <span>Or so I thought! I present my pièce de résistance!</span>
         <Tweet id="529024175285878784" />
+
+        <span>Also some copy pasta</span>
+        <div className="flex md:flex-row flex-col gap-6 md:mx-14">
+          <Tweet id="1758110242863227017" />
+          <Tweet id="1757255984945193032" />
+          <Tweet id="1757228226290573620" />
+        </div>
 
         <div className="flex justify-center">
           {
