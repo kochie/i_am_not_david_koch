@@ -143,6 +143,9 @@ export default function Home() {
           <Tweet id="1758110242863227017" />
           <Tweet id="1757255984945193032" />
           <Tweet id="1757228226290573620" />
+          <Tweet id="1759323123852185847" />
+          <Tweet id="1759466016709460028" />
+          <Tweet id="1759762423400091767" />
         </div>
 
         <div className="flex justify-center">
