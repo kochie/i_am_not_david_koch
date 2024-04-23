@@ -137,6 +137,9 @@ export default function Home() {
 
         <span>Or so I thought! I present my pièce de résistance!</span>
         <Tweet id="529024175285878784" />
+        
+        <span>If I was the Chairman of the Port Adelaide Football Club this would already be on their t-shirts.</span>
+        <Tweet id="1782642492267237729" />
 
         <span>Also some copy pasta</span>
         <div className="flex md:flex-row flex-col gap-6 md:mx-14">
