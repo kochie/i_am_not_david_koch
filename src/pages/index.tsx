@@ -151,6 +151,9 @@ export default function Home() {
           <Tweet id="1759762423400091767" />
         </div>
 
+        <span>I'm always happy to help the little guys</span>
+        <Tweet id="1788341779097657430"/>
+
         <div className="flex justify-center">
           {
             "Also to all the cowards out there who delete your mistake as soon as I tell you. I see you..."
