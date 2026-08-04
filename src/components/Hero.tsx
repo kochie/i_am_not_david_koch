@@ -22,6 +22,7 @@ export function Hero({ davidSrc, meSrc }: HeroProps) {
             alt="image of david koch from sunrise"
             title="Not this guy"
             className="h-auto w-full"
+            priority
           />
         </div>
         <span className="z-10 rounded-full bg-accent-500 px-4 py-1 font-display text-sm font-bold uppercase tracking-wide text-white shadow-md md:-mx-6">
@@ -32,6 +33,7 @@ export function Hero({ davidSrc, meSrc }: HeroProps) {
             src={meSrc}
             alt="image of me robert koch"
             className="h-auto w-full"
+            priority
           />
         </div>
       </div>

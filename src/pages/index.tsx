@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Script from "next/script";
 import { NextSeo } from "next-seo";
 
 import David from "../assets/images/david.jpeg";

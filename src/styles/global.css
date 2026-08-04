@@ -10,7 +10,9 @@ html {
     sans-serif;
 
   --color-accent-100: #fef3c7;
+  --color-accent-300: #fcd34d;
   --color-accent-400: #fbbf24;
   --color-accent-500: #f59e0b;
   --color-accent-600: #d97706;
+  --color-accent-700: #b45309;
 }
