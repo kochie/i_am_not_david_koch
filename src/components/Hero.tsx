@@ -16,23 +16,27 @@ export function Hero({ davidSrc, meSrc }: HeroProps) {
         David Koch.
       </h1>
       <div className="flex flex-col items-center gap-4 md:flex-row">
-        <div className="w-64 overflow-hidden rounded-xl shadow-lg ring-1 ring-black/5 transition-transform duration-300 hover:scale-105 dark:ring-white/10">
+        <div className="relative aspect-square w-64 overflow-hidden rounded-xl shadow-lg ring-1 ring-black/5 transition-transform duration-300 hover:scale-105 dark:ring-white/10">
           <Image
             src={davidSrc}
             alt="image of david koch from sunrise"
             title="Not this guy"
-            className="h-auto w-full"
+            fill
+            sizes="256px"
+            className="object-cover"
             priority
           />
         </div>
         <span className="z-10 rounded-full bg-accent-500 px-4 py-1 font-display text-sm font-bold uppercase tracking-wide text-white shadow-md md:-mx-6">
           vs
         </span>
-        <div className="w-64 overflow-hidden rounded-xl shadow-lg ring-1 ring-black/5 transition-transform duration-300 hover:scale-105 dark:ring-white/10">
+        <div className="relative aspect-square w-64 overflow-hidden rounded-xl shadow-lg ring-1 ring-black/5 transition-transform duration-300 hover:scale-105 dark:ring-white/10">
           <Image
             src={meSrc}
             alt="image of me robert koch"
-            className="h-auto w-full"
+            fill
+            sizes="256px"
+            className="object-cover"
             priority
           />
         </div>
