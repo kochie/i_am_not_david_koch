@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Script from "next/script";
 import { NextSeo } from "next-seo";
 
@@ -16,11 +15,17 @@ import p5 from "../assets/images/5.jpeg";
 import josh1 from "../assets/images/josh1.jpeg";
 import josh2 from "../assets/images/josh2.jpeg";
 
-import { Tweet, TweetInReplyTo } from "react-tweet";
+import { Tweet } from "react-tweet";
+
+import { Hero } from "../components/Hero";
+import { Section } from "../components/Section";
+import { TweetBlock } from "../components/TweetBlock";
+import { EvidenceGrid } from "../components/EvidenceGrid";
+import { Footer } from "../components/Footer";
 
 export default function Home() {
   return (
-    <div className="bg-slate-100 dark:bg-slate-800 dark:text-white text-center md:text-left">
+    <div className="min-h-screen bg-slate-50 font-sans text-slate-900 dark:bg-slate-900 dark:text-slate-100">
       <Head>
         <title>I am Not David Koch</title>
       </Head>
@@ -48,144 +53,185 @@ export default function Home() {
         }}
       />
 
-      <div className="md:flex md:flex-col md:justify-center gap-6 md:mx-auto items-center">
-        <div className="md:mt-40 text-5xl text-center p-5">
-          I am <span className="italic font-bold mx-2">_not_</span> David Koch.
-        </div>
-        <div className="my-20">
-          <Image src={David} alt="image of david koch from sunrise" />
-        </div>
-        <div className="flex justify-center">
-          Look at this beautiful egg shaped man, now look at me.
-        </div>
-        <div className="md:w-96">
-          <Image src={Me} alt="image of me robert koch" />
-        </div>
-        <div className="flex justify-center md:w-[600px] ">
+      <div className="flex flex-col items-center gap-16 pb-10">
+        <Hero davidSrc={David} meSrc={Me} />
+
+        <Section>
           {
             "Don't be fooled by how much we're #twinning we couldn't be more different. Well we're both white Australian males, but David is 38 years older than me."
           }
-        </div>
-        <div className="md:w-[600px]">
+        </Section>
+
+        <Section>
           {
             'As the chairman of the Port Adelaide Football Club David gets a lot of "fan" support. But sometimes in the heat of the moment his critics will mistake his twitter handle of '
           }
-          <a className="underline" href="https://twitter.com/kochie_online">
+          <a
+            className="font-medium text-accent-600 underline decoration-accent-400/60 underline-offset-2 transition-colors hover:text-accent-700 dark:text-accent-400 dark:hover:text-accent-300"
+            href="https://twitter.com/kochie_online"
+          >
             @kochie_online
           </a>
           {" with mine "}
-          <a className="underline" href="https://twitter.com/kochie">
+          <a
+            className="font-medium text-accent-600 underline decoration-accent-400/60 underline-offset-2 transition-colors hover:text-accent-700 dark:text-accent-400 dark:hover:text-accent-300"
+            href="https://twitter.com/kochie"
+          >
             @kochie
           </a>
           {"."}
-        </div>
-        <div className="">
-          {/* <MichaelLynch /> */}
+        </Section>
+
+        <TweetBlock>
           <Tweet id="1114324112011214849" />
-        </div>
+        </TweetBlock>
 
-        {/* <Spotty /> */}
-        <Tweet id="1242652582482292737" />
-        <Tweet id="1223362204310753280" />
+        <TweetBlock>
+          <Tweet id="1242652582482292737" />
+        </TweetBlock>
+        <TweetBlock>
+          <Tweet id="1223362204310753280" />
+        </TweetBlock>
 
-        <Tweet id="1437154932616949762" />
+        <TweetBlock>
+          <Tweet id="1437154932616949762" />
+        </TweetBlock>
 
-        <div className="flex justify-center md:w-[600px] mx-auto mt-10 mb-20">
-          {"Oof Leigh, tell me how you really feel."}
-        </div>
+        <Section>{"Oof Leigh, tell me how you really feel."}</Section>
 
-        <Tweet id="1277777946397143040" />
+        <TweetBlock>
+          <Tweet id="1277777946397143040" />
+        </TweetBlock>
 
-        <div className="flex justify-center md:w-[600px] md:mx-auto mx-3 mt-10 mb-20">
-          {"Michael really doesn't like me :("}
-        </div>
+        <Section>{"Michael really doesn't like me :("}</Section>
 
-        <Tweet id="1558592495532982272" />
-        <div className="flex justify-center md:w-[600px] md:mx-auto mx-3 mt-10 mb-20 text-center">
+        <TweetBlock>
+          <Tweet id="1558592495532982272" />
+        </TweetBlock>
+        <Section>
           {
             "Archie is upset a commercial TV show has no scientific data on it. May I suggest ABC News Archie?"
           }
-        </div>
+        </Section>
 
-        <div className="flex justify-center md:w-[600px] md:mx-auto mx-3 mt-10 mb-20">
+        <Section>
           {
             "And it's not just his detractors, politicians get it wrong...\n all. the. time."
           }
-        </div>
+        </Section>
 
-        <Tweet id="1549503540821098496" />
+        <TweetBlock>
+          <Tweet id="1549503540821098496" />
+        </TweetBlock>
 
-        <Tweet id="1549861881632157696" />
+        <TweetBlock>
+          <Tweet id="1549861881632157696" />
+        </TweetBlock>
 
-        <div className="flex justify-center md:w-[600px] mx-auto">
+        <Section>
           {
             "But don't feel bad if you can't tell us apart. His co-host couldn't either."
           }
+        </Section>
+
+        <TweetBlock>
+          <Tweet id="431138757220110337" />
+        </TweetBlock>
+
+        <TweetBlock>
+          <Tweet id="1729316763584856544" />
+        </TweetBlock>
+
+        <Section>{"I get in on the fun too."}</Section>
+        <TweetBlock>
+          <Tweet id="1729372641914699866" />
+        </TweetBlock>
+
+        <Section>
+          {"But Alas, all good things must come to an end."}
+        </Section>
+        <TweetBlock>
+          <Tweet id="1663074550115074049" />
+        </TweetBlock>
+
+        <Section>
+          {"Or so I thought! I present my pièce de résistance!"}
+        </Section>
+        <TweetBlock>
+          <Tweet id="529024175285878784" />
+        </TweetBlock>
+
+        <Section>
+          {
+            "If I was the Chairman of the Port Adelaide Football Club this would already be on their t-shirts."
+          }
+        </Section>
+        <TweetBlock>
+          <Tweet id="1782642492267237729" />
+        </TweetBlock>
+
+        <Section>{"Also some copy pasta"}</Section>
+        <div className="mx-auto flex max-w-5xl flex-col items-center gap-6 px-4 md:flex-row md:flex-wrap md:justify-center">
+          <TweetBlock>
+            <Tweet id="1758110242863227017" />
+          </TweetBlock>
+          <TweetBlock>
+            <Tweet id="1757255984945193032" />
+          </TweetBlock>
+          <TweetBlock>
+            <Tweet id="1757228226290573620" />
+          </TweetBlock>
+          <TweetBlock>
+            <Tweet id="1759323123852185847" />
+          </TweetBlock>
+          <TweetBlock>
+            <Tweet id="1759466016709460028" />
+          </TweetBlock>
+          <TweetBlock>
+            <Tweet id="1759762423400091767" />
+          </TweetBlock>
         </div>
 
-        <Tweet id="431138757220110337" />
+        <Section>{"I'm always happy to help the little guys"}</Section>
+        <TweetBlock>
+          <Tweet id="1788341779097657430" />
+        </TweetBlock>
 
-        <Tweet id="1729316763584856544" />
-
-        <div className="flex justify-center md:w-[600px] mx-auto">
-          {"I get in on the fun too."}
-        </div>
-        <Tweet id="1729372641914699866" />
-
-        <span>But Alas, all good things must come to an end.</span>
-        <Tweet id="1663074550115074049" />
-
-        <span>Or so I thought! I present my pièce de résistance!</span>
-        <Tweet id="529024175285878784" />
-        
-        <span>If I was the Chairman of the Port Adelaide Football Club this would already be on their t-shirts.</span>
-        <Tweet id="1782642492267237729" />
-
-        <span>Also some copy pasta</span>
-        <div className="flex md:flex-row flex-col gap-6 md:mx-14">
-          <Tweet id="1758110242863227017" />
-          <Tweet id="1757255984945193032" />
-          <Tweet id="1757228226290573620" />
-          <Tweet id="1759323123852185847" />
-          <Tweet id="1759466016709460028" />
-          <Tweet id="1759762423400091767" />
-        </div>
-
-        <span>I'm always happy to help the little guys</span>
-        <Tweet id="1788341779097657430"/>
-
-        <div className="flex justify-center">
+        <Section>
           {
             "Also to all the cowards out there who delete your mistake as soon as I tell you. I see you..."
           }
-        </div>
-        <div className="md:mx-20 mx-3 my-20 gap-4 grid md:grid-cols-5 grid-cols-1">
-          <Image src={p1} alt="screen grab of tweet1" />
-          <Image src={p2} alt="screen grab of tweet2" />
-          <Image src={p3} alt="screen grab of tweet3" />
-          <Image src={p4} alt="screen grab of tweet4" />
-          <Image src={p5} alt="screen grab of tweet5" />
-        </div>
-        <div className="flex justify-center">Even you Josh.</div>
-        <div className="md:mx-auto mx-3 my-20 gap-4 grid md:grid-cols-2 grid-cols-1 md:w-[700px]">
-          <Image src={josh1} alt="screen grab of tweet1 from josh" />
-          <Image src={josh2} alt="screen grab of tweet2 from josh" />
-        </div>
+        </Section>
+        <EvidenceGrid
+          items={[
+            { src: p1, alt: "screen grab of tweet1" },
+            { src: p2, alt: "screen grab of tweet2" },
+            { src: p3, alt: "screen grab of tweet3" },
+            { src: p4, alt: "screen grab of tweet4" },
+            { src: p5, alt: "screen grab of tweet5" },
+          ]}
+          columns="md:grid-cols-5"
+          className="max-w-5xl"
+        />
 
-        <div className="flex justify-center">
+        <Section>{"Even you Josh."}</Section>
+        <EvidenceGrid
+          items={[
+            { src: josh1, alt: "screen grab of tweet1 from josh" },
+            { src: josh2, alt: "screen grab of tweet2 from josh" },
+          ]}
+          columns="md:grid-cols-2"
+          startIndex={6}
+          className="max-w-2xl"
+        />
+
+        <Section>
           {
             "But hey it could be worse, at least no one thinks I'm this David Koch."
           }
-        </div>
-        <div className="mb-40">
-          <Image
-            src={DavidKoch}
-            alt="image of David Koch from Koch Brothers."
-          />
-        </div>
+        </Section>
+        <Footer davidKochBrosSrc={DavidKoch} />
       </div>
     </div>
   );
 }
-
-
