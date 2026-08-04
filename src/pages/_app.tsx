@@ -3,6 +3,13 @@ import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 import * as Fathom from "fathom-client";
+import { Inter, Space_Grotesk } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+});
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
@@ -29,6 +36,10 @@ function MyApp({ Component, pageProps }: AppProps) {
     };
   }, [router.events]);
 
-  return <Component {...pageProps} />;
+  return (
+    <main className={`${inter.variable} ${spaceGrotesk.variable}`}>
+      <Component {...pageProps} />
+    </main>
+  );
 }
 export default MyApp;
