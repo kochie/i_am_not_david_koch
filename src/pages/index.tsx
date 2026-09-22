@@ -14,11 +14,13 @@ import p5 from "../assets/images/5.jpeg";
 import josh1 from "../assets/images/josh1.jpeg";
 import josh2 from "../assets/images/josh2.jpeg";
 
+
 import { Tweet } from "react-tweet";
 
 import { Hero } from "../components/Hero";
 import { Section } from "../components/Section";
 import { TweetBlock } from "../components/TweetBlock";
+import { ConversationTweet } from "../components/ConversationTweet";
 import { EvidenceGrid } from "../components/EvidenceGrid";
 import { Footer } from "../components/Footer";
 
@@ -194,6 +196,11 @@ export default function Home() {
         <Section>{"I'm always happy to help the little guys"}</Section>
         <TweetBlock>
           <Tweet id="1788341779097657430" />
+        </TweetBlock>
+
+        <Section>{"It's been so long since somebody showed me some love but in the year of our lord 2026 ya'll still can't tell us apart."}</Section>
+        <TweetBlock>
+          <ConversationTweet id="2102512517692137836" />
         </TweetBlock>
 
         <Section>

@@ -4,6 +4,126 @@ html {
   scroll-behavior: smooth;
 }
 
+.conversation-tweet {
+  width: min(100%, 550px);
+  overflow: hidden;
+  border: 1px solid rgb(207 217 222);
+  border-radius: 12px;
+  background: #fff;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  color: rgb(15 20 25);
+}
+
+.conversation-tweet .react-tweet-theme {
+  max-width: none;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.conversation-tweet-ancestor {
+  position: relative;
+  display: flex;
+  padding: 0.75rem 1rem 0;
+}
+
+.conversation-tweet-ancestor__avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 3rem;
+  flex-shrink: 0;
+}
+
+.conversation-tweet-ancestor__avatar img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+.conversation-tweet-ancestor__avatar::after {
+  content: "";
+  flex: 1;
+  width: 2px;
+  margin-top: 0.25rem;
+  background: rgb(207 217 222);
+}
+
+.conversation-tweet-ancestor::before {
+  content: "";
+  position: absolute;
+  left: calc(1rem + 1.5rem - 1px);
+  bottom: -2.25rem;
+  height: 2.25rem;
+  width: 2px;
+  background: rgb(207 217 222);
+}
+
+.conversation-tweet-ancestor__body {
+  flex: 1;
+  min-width: 0;
+  padding-left: 0.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+}
+
+.conversation-tweet-ancestor__header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.conversation-tweet-ancestor__name {
+  font-weight: 700;
+  color: inherit;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.conversation-tweet-ancestor__username,
+.conversation-tweet-ancestor__separator,
+.conversation-tweet-ancestor__date {
+  color: rgb(83 100 113);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.conversation-tweet-ancestor__body p {
+  margin: 0.125rem 0 0;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  color: inherit;
+}
+
+.conversation-tweet-ancestor__body > div {
+  margin-top: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .conversation-tweet {
+    border-color: rgb(66 83 100);
+    background: rgb(21 32 43);
+    color: rgb(247 249 249);
+  }
+
+  .conversation-tweet-ancestor__avatar::after,
+  .conversation-tweet-ancestor::before {
+    background: rgb(66 83 100);
+  }
+
+  .conversation-tweet-ancestor__username,
+  .conversation-tweet-ancestor__separator,
+  .conversation-tweet-ancestor__date {
+    color: rgb(139 152 165);
+  }
+}
+
 @theme {
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui,
